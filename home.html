@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kaab Mohamed — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Kaab Mohamed</h1>
+        <p class="tag">Computer Science Student — Building useful digital tools</p>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / About -->
+    <section id="about" class="section hero">
+      <div class="container hero-grid">
+        <div class="hero-photo">
+          <!-- Replace src with your photo URL or local file (e.g. /img/kaab.jpg) -->
+          <img src="https://via.placeholder.com/360" alt="Kaab Mohamed" />
+        </div>
+        <div class="hero-content">
+          <h2>Hello — I'm Kaab</h2>
+          <p class="lead">
+            I am a computer science student focused on building useful digital tools.
+            I enjoy designing user-friendly interfaces and solving real problems with code.
+          </p>
+          <p>
+            I specialize in HTML, CSS, JavaScript, Java and Firebase. I build small apps,
+            prototypes and tools that help automate or simplify tasks.
+          </p>
+          <a class="btn" href="#projects">See my projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill">HTML</div>
+          <div class="skill">CSS</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">Java</div>
+          <div class="skill">Firebase</div>
+          <div class="skill">Git & GitHub</div>
+          <div class="skill">Responsive Design</div>
+          <div class="skill">Problem Solving</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <p class="muted">Some things I've built recently — click to view (links can be added).</p>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>Project One</h3>
+            <p>Small web app built with HTML/CSS/JS to demonstrate an interactive UI.</p>
+            <div class="tags"><span>HTML</span><span>JavaScript</span></div>
+            <a class="card-btn" href="#">View</a>
+          </article>
+
+          <article class="project-card">
+            <h3>Project Two</h3>
+            <p>Realtime chat prototype using Firebase for authentication and data storage.</p>
+            <div class="tags"><span>Firebase</span><span>JS</span></div>
+            <a class="card-btn" href="#">View</a>
+          </article>
+
+          <article class="project-card">
+            <h3>Project Three</h3>
+            <p>Utility app written in Java to process and export data for small businesses.</p>
+            <div class="tags"><span>Java</span></div>
+            <a class="card-btn" href="#">View</a>
+          </article>
+
+          <article class="project-card">
+            <h3>Project Four</h3>
+            <p>Personal dashboard that aggregates simple metrics and displays charts.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span></div>
+            <a class="card-btn" href="#">View</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-list">
+          <div class="experience-item">
+            <h4>Student Developer</h4>
+            <time datetime="2024">2023 — Present</time>
+            <p>Building small applications, learning software architecture and collaborating on team projects.</p>
+          </div>
+
+          <div class="experience-item">
+            <h4>Freelance Web Tools</h4>
+            <time datetime="2023">2022 — 2023</time>
+            <p>Delivered simple websites and tools for local clients — focused on usability and maintainability.</p>
+          </div>
+
+          <div class="experience-item">
+            <h4>Open-source contributions</h4>
+            <time datetime="2022">2021 — 2022</time>
+            <p>Contributed bug fixes and small features to community repos on GitHub.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- More long content: Blog / Notes (example to make page longer) -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Notes & Thoughts</h2>
+        <div class="blog-grid">
+          <article class="post">
+            <h3>How I built a small chat app</h3>
+            <p>Short summary of architecture, Firebase usage and lessons learned.</p>
+            <a class="card-btn" href="#">Read</a>
+          </article>
+          <article class="post">
+            <h3>Designing for simplicity</h3>
+            <p>Principles I use when choosing how to structure UI/UX for small tools.</p>
+            <a class="card-btn" href="#">Read</a>
+          </article>
+          <article class="post">
+            <h3>Deploying small projects</h3>
+            <p>How I deploy prototypes using GitHub Pages and small VPS setups.</p>
+            <a class="card-btn" href="#">Read</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="muted">Want to work together? Send an email or use the form below.</p>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h3>Email</h3>
+            <p><a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <h3>Location</h3>
+            <p>Kenya</p>
+          </div>
+
+          <form class="contact-form" action="#" method="POST" onsubmit="alert('This is a demo form — replace action with your backend or use Formspree.'); return false;">
+            <label>
+              Your name
+              <input type="text" name="name" placeholder="Your name" required>
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" required>
+            </label>
+            <label>
+              Message
+              <textarea name="message" rows="5" placeholder="Hi Kaab, I'd like to talk about..." required></textarea>
+            </label>
+            <button class="btn" type="submit">Send message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Kaab Mohamed — Built with HTML & CSS</p>
+        <div class="footer-links">
+          <a href="#">GitHub</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // Set copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
