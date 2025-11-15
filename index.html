@@ -34,15 +34,20 @@
           <img src="images/kaab.jpg" alt="Kaab Mohamed" class="my-photo" />
         </div>
         <div class="hero-content">
-          <h2>Hello — I'm Kaab</h2>
-          <p class="lead">
-            I am a computer science student focused on building useful digital tools.
-            I enjoy designing user-friendly interfaces and solving real problems with code.
-          </p>
-          <p>
-            I specialize in HTML, CSS, JavaScript, Java and Firebase. I build small apps,
-            prototypes and tools that help automate or simplify tasks.
-          </p>
+       <h1 class="hero-title">Hello — I'm <span class="glow-text">Kaab</span></h1>
+
+     <p class="hero-subtitle">
+  I am a web developer and designer dedicated to creating visually appealing,
+  fast, and highly functional websites. I combine clean design with strong
+  technical skills to deliver smooth and modern digital experiences.
+  </p>
+
+    <p class="hero-skills">
+  Skilled in <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>,
+  <strong>Java</strong>, and <strong>Firebase</strong> — I build small apps,
+  prototypes, and tools that automate or simplify tasks.
+  </p>
+
           <a class="btn" href="#projects">See my projects</a>
         </div>
       </div>
@@ -162,9 +167,13 @@
         <div class="contact-grid">
           <div class="contact-card">
             <h3>Email</h3>
-            <p><a href="mailto:your.email@example.com">kaizotech2@gmail.com</a></p>
+            <p><a href="mailto:kaizotech2@gmail.com">Email Me></a></p>
             <h3>Location</h3>
             <p>Kenya</p>
+          <div class="contact-card">
+            <h3>Call us on</h3>
+            <a href="https://wa.me/254726151104" target="_blank">Message Me on WhatsApp</a>
+
           </div>
 
           <form class="contact-form" action="#" method="POST" onsubmit="alert('This is a demo form — replace action with your backend or use Formspree.'); return false;">
@@ -185,6 +194,86 @@
         </div>
       </div>
     </section>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Donate</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .donate-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .donate-header h1 {
+      font-size: 42px;
+      font-weight: bold;
+    }
+
+    .donate-header p {
+      font-size: 18px;
+      opacity: 0.7;
+    }
+
+    .donate-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 32px;
+      margin-top: 40px;
+    }
+
+    .donate-card {
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 32px;
+      border-radius: var(--radius);
+      text-align: center;
+      transition: 0.25s;
+      cursor: pointer;
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .donate-card:hover {
+      transform: translateY(-5px);
+      border-color: #00ffbb;
+    }
+
+    .donate-icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="donate-header">
+        <h1>Support My Work</h1>
+        <p>Your donation helps me improve and continue building great projects.</p>
+      </div>
+
+      <div class="donate-grid">
+
+        <a href="donate/mpesa.html" class="donate-card">
+          <div class="donate-icon">📱</div>
+          <h2>M-Pesa</h2>
+          <p>Donate instantly with your Safaricom line.</p>
+        </a>
+
+        <a href="donate/crypto.html" class="donate-card">
+          <div class="donate-icon">🪙</div>
+          <h2>Crypto (USDT)</h2>
+          <p>Support using USDT TRC20, safe and fast.</p>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
 
     <!-- Footer -->
     <footer class="site-footer">

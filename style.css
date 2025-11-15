@@ -42,24 +42,84 @@ html,body{
 }
 .nav a:hover{color:var(--highlight);}
 
-/* Hero */
-.section{padding:70px 0;}
-.hero-grid{
-  display:grid;grid-template-columns:360px 1fr;gap:50px;align-items:center;
+/* Hero Section Animation */
+.hero {
+  margin-top: 80px;
+  text-align: left;
+  animation: fadeSlideUp 1.4s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
 }
-.hero-photo img{
-  width:100%;border-radius:var(--radius);
-  box-shadow:0 0 25px rgba(56,189,248,0.3);
+
+.hero-title {
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: white;
 }
-.hero-content h2{font-size:2.2rem;margin-bottom:10px}
-.lead{color:var(--muted);margin-top:6px;font-size:1.05rem}
-.btn{
-  display:inline-block;margin-top:16px;padding:12px 20px;border-radius:var(--radius);
-  background: var(--highlight);color:#000;font-weight:700;text-decoration:none;
-  box-shadow:0 0 20px rgba(56,189,248,0.4);
-  transition:.25s;
+
+.hero-title .glow-text {
+  color: #7ab6ff; /* base color */
+  text-shadow: 
+    0 0 5px #7ab6ff, 
+    0 0 10px #7ab6ff, 
+    0 0 20px #7ab6ff, 
+    0 0 30px #7ab6ff, 
+    0 0 40px #7ab6ff;
+  animation: glowPulse 2s infinite alternate;
 }
-.btn:hover{transform:scale(1.05)}
+
+@keyframes glowPulse {
+  0% {
+    text-shadow: 0 0 5px #7ab6ff, 0 0 10px #7ab6ff, 0 0 20px #7ab6ff, 0 0 30px #7ab6ff, 0 0 40px #7ab6ff;
+  }
+  100% {
+    text-shadow: 0 0 10px #7ab6ff, 0 0 20px #7ab6ff, 0 0 30px #7ab6ff, 0 0 40px #7ab6ff, 0 0 60px #7ab6ff;
+  }
+}
+
+.hero-subtitle {
+  margin-top: 18px;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #d0d0d0;
+  max-width: 600px;
+}
+
+
+
+.btn {
+  display: inline-block;
+  padding: 20px 40px;          /* bigger size */
+  border-radius: 16px;         /* rounded box */
+  background: linear-gradient(135deg, #7ab6ff, #4d9cff); /* gradient box */
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;             /* big text */
+  text-decoration: none;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25); /* shadow to lift it */
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-4px) scale(1.05); /* lift + slight zoom on hover */
+  box-shadow: 0 12px 25px rgba(0,0,0,0.35); /* stronger shadow */
+  background: linear-gradient(135deg, #9ccaff, #6aa8ff); /* hover gradient */
+}
+
+
+/* Fade + Slide Animation */
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 /* Skills */
 .section-title{font-size:1.7rem;margin-bottom:14px}
